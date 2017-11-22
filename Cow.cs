@@ -9,6 +9,12 @@ namespace CowsAndGoats
 {
     class Cow: Livestock
     {
+		// each object class must have a constructor
+		public Cow(int id, String animal, int yearBorn, double costMonth, double costVacc, double amountMilk)
+			:base (id, animal, yearBorn, costMonth, costVacc, amountMilk)
+		{
+		}
+
         public void MostMilk()
         {
             // display data of cow that produced highest amount of milk

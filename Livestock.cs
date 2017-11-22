@@ -22,7 +22,7 @@ namespace CowsAndGoats
         String userSelected;
         String myline;
 
-        public void Animal(int id, String animal, int yearBorn, double costMonth, double costVacc, double amountMilk)
+        public Livestock(int id, String animal, int yearBorn, double costMonth, double costVacc, double amountMilk)
         {
             this.id = id;
             this.animal = animal;
@@ -38,5 +38,37 @@ namespace CowsAndGoats
         {
             Console.WriteLine("ID: " + id);
         }// end of displayInfo method
+
+
+		// Public getters for variables
+		public int AccessID 
+		{
+			get { return this.id; }
+		}
+
+		public String AccessName 
+		{
+			get { return this.animal; }
+		}
+
+		public int AccessYear
+		{
+			get { return this.yearBorn;}
+		}
+
+		public double AccessCost 
+		{
+			get { return this.costMonth; }
+		}
+
+		public double AccessVacc 
+		{
+			get { return this.costVacc; }
+		}
+
+		public double AccessMilk 
+		{
+			get { return this.amountMilk; }
+		}
     }
 }

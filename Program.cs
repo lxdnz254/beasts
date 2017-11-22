@@ -5,16 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+
 namespace CowsAndGoats
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            String[] liveStockArray = new String[6];
-            TextReader tr = new StreamReader(Livestock.liveStockData);
+			// Creates the Livestock Array from file
             Utilities.ReadFile();
+			// Launch the Menu
             Utilities.Menu();
+			// end of program
+			Console.WriteLine ("Press Any Key to exit;");
+			Console.ReadKey ();
         }
     }
 }
